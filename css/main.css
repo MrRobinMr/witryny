@@ -1,0 +1,191 @@
+body{
+    background-color: black;
+}
+.navbartlo{
+    width: 100%;
+    background-color: darkgrey;
+    transform: skewY(-2deg);
+    position: absolute;
+    top: -150px;
+    height: 260px;
+}
+.navbartlo p {
+    transform: skewY(2deg);
+    position: relative;
+    top: 15%;
+}
+.menu{
+    background-color: black;
+}
+.zawa{
+    transform: skewY(2deg);
+    display: block;
+    background-color: white;
+    position: absolute;
+    padding-bottom: 60px;
+    top: 200px;
+    width: 100%;
+    height: 350px;
+}
+.zawa p{
+    transform: skewY(-2deg);
+    margin-top: 30px;
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.zawa h1{
+    transform: skewY(-2deg);
+    margin-top: 30px;
+    text-align: center;
+}
+.fot{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    color: #4f4f4f;
+}
+.slider{
+    display: block;
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    height: 100%;
+}
+.logo{
+    position: absolute;
+    top: 5px;
+    left: 5px;
+}
+.logo p {
+    position: relative;
+    top: -90px;
+    left: 105px;
+}
+#large{
+    position: absolute;
+    right: 15px;
+    top: 0px;
+}
+#large div{
+    border: solid 2px black;
+    padding: 3px;
+    margin: 5px;
+    height: 40px;
+    width: 150px;
+    font-size: 20px;
+    border-radius: 40px;
+    text-align: center;
+    color: darkgray;
+    background-color: black;
+}
+#large div:hover{
+    background-color: darkgray;
+    color: black;
+}
+#medium{
+    position: absolute;
+    right: 20px;
+    top: 5px;
+}
+#medium div{
+    border: solid 2px black;
+    padding: 3px;
+    margin: 2px;
+    height: 35px;
+    width: 130px;
+    font-size: 15px;
+    border-radius: 40px;
+    text-align: center;
+    color: darkgray;
+    background-color: black;
+}
+#medium div:hover{
+    background-color: darkgray;
+    color: black;
+}
+#mobile{
+    position: absolute;
+    right: 25px;
+    top: 130px;
+}
+#mobile div{
+    border: solid 2px white;
+    padding: 3px;
+    margin: 2px;
+    height: 30px;
+    width: 90px;
+    font-size: 12px;
+    border-radius: 40px;
+    text-align: center;
+    color: darkgray;
+    background-color: black;
+}
+#mobile div:hover{
+    background-color: darkgray;
+    color: black;
+}
+#butm{
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    height: 50px;
+    width: 50px;
+    border: solid 2px black;
+    border-radius: 5px;
+    background-color: black;
+}
+#butm:hover{
+    background-color: darkgrey;
+}
+@media (min-width: 1000px) {
+    #large{
+        display: flex;
+    }
+    #medium{
+        display: none;
+    }
+    #mobile{
+        display: none;
+    }
+    #butm{
+        display: none;
+    }
+}
+@media (min-width: 870px) and (max-width: 1000px){
+    #large{
+        display: none;
+    }
+    #medium{
+        display: flex;
+    }
+    #mobile{
+        display: none;
+    }
+    #butm{
+        display: none;
+    }
+}
+@media (max-width: 870px){
+    #large{
+        display: none;
+    }
+    #medium{
+        display: none;
+    }
+    #mobile{
+        display: flex;
+    }
+    #butm{
+        display: flex;
+    }
+    #mobile.hidden{
+        display: none;
+    }
+}
+.hidden{
+    display: none;
+}
+.show{
+    display: flex;
+}
